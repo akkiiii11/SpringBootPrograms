@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "Ajay" class="com.spring.Painter">
+<constructor-arg ref="circle"></constructor-arg>
+</bean>
+
+<bean id="circle" class="com.spring.Circle">
+<constructor-arg name="color" value="Green"></constructor-arg>
+</bean>
+
+<bean id="rect" class="com.spring.Rectangle">
+<property name="color" value="red"></property> 
+</bean>
+
+<bean id="Vijay" class="com.spring.Singer"></bean>
+
+</beans>
